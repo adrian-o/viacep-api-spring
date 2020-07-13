@@ -1,6 +1,5 @@
 package com.mrohana.viacep.controller;
 
-import com.mrohana.viacep.data.Endereco;
 import com.mrohana.viacep.data.ViaCepRequest;
 import com.mrohana.viacep.data.ViaCepResponse;
 import com.mrohana.viacep.service.CepService;
@@ -11,7 +10,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.client.RestTemplate;
 
 @RestController
 @RequestMapping("/viacep-cli/cep")
