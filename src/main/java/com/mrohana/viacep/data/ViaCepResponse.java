@@ -10,6 +10,7 @@ public class ViaCepResponse {
     private Date data;
     private Endereco endereco;
     private Integer result;
+    private String mensagem;
 
     public ViaCepRequest getRequest() {
         return request;
@@ -41,5 +42,13 @@ public class ViaCepResponse {
 
     public void setResult(Integer result) {
         this.result = result;
+    }
+
+    public String getMensagem() {
+        return mensagem;
+    }
+
+    public void setMensagem(String mensagem) {
+        this.mensagem = mensagem;
     }
 }

@@ -18,12 +18,11 @@ public class CepService {
     @Autowired
     private ViaCepRepository viaCepRepository;
 
-    @Value( "${viacep.client.url}" )
+    @Value("${viacep.client.url}")
     private String viaCepUrl;    
 
     public ViaCepResponse getClientViaCep(ViaCepRequest request) {
-        ViaCepResponse response = new ViaCepResponse(); 
-        response.setRequest(request);
+        ViaCepResponse response = new ViaCepResponse();
         response.setData(new Date());
         
         RestTemplate restTemplate = new RestTemplate();
@@ -33,8 +32,12 @@ public class CepService {
         response.setRequest(request);
         response.setData(new Date());
 
-        viaCepRepository.insert(response);
+        saveResponse(response);
 
         return response;
+    }
+
+    public void saveResponse(ViaCepResponse response) {
+        viaCepRepository.insert(response);
     }
 }
