@@ -22,14 +22,14 @@ The following guides illustrate how to use some features concretely:
 
 ### Referências para subir a aplicação
 
-## Build no heroku
+#### Build no heroku
 - https://devcenter.heroku.com/articles/deploying-spring-boot-apps-to-heroku
 
-## Rename app no Heroku
+#### Rename app no Heroku
 - https://devcenter.heroku.com/articles/renaming-apps
 
-## Configurar variável do ATLAS
+#### Configurar variável do ATLAS
 - https://devcenter.heroku.com/articles/config-vars
 
-## Configuração do CORS no Spring
+#### Configuração do CORS no Spring
 - https://www.baeldung.com/spring-cors
